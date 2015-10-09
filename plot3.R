@@ -23,7 +23,7 @@ dt$Sub_metering_3 <- as.numeric(dt$Sub_metering_3)
 
 ## Plot3.png
 png("plot3.png", width = 480, height = 480, units = "px")
-plot(dt$datetime, dt$Sub_metering_1, type = "l")
+plot(dt$datetime, dt$Sub_metering_1, type = "l", xlab = " ", ylab = "Energy sub metering")
 lines(dt$datetime, dt$Sub_metering_2, col = "red")
 lines(dt$datetime, dt$Sub_metering_3, col = "blue")
 legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lwd = 1, col = c("black", "red", "blue"), merge = TRUE)
